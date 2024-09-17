@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url(./assets/fonts/comfortaa-regular-webfont.woff2);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    gap: 10px;
+    font-family: 'Comfortaa-Regular';
+}
+
+.signup-heading{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 3.5em;
+}
+
+input[placeholder]{
+    font-family: 'Comfortaa-Regular';
+}
+
+
