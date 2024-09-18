@@ -17,6 +17,11 @@
     height: 100vh;
     gap: 10px;
     font-family: 'Comfortaa-Regular';
+    border: 10px solid #5041d0;
+    opacity: 0;
+    transition-duration: 1500ms;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
 }
 
 .signup-heading{
@@ -31,8 +36,50 @@
     margin-bottom: 3.5em;
 }
 
+input{
+    appearance: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    transition-duration: 300ms;
+    transition-property: font-size, border-bottom;
+}
+
+input:focus{
+    font-size: 1rem;
+    border-bottom: 3px solid rgb(124, 124, 229);
+}
+
 input[placeholder]{
     font-family: 'Comfortaa-Regular';
 }
 
+input:valid{
+    border-color: #2828FF;
+}
 
+a{
+    color: #170fad;
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: #5149FE;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa-Regular';
+    font-weight: 900;
+    padding: 0.7em;
+    color: white;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: #6D5EFF;
+}
+
+/* For the transition effect when page loads. Class added to the main-container using JavaScript */
+.fade-in{
+    opacity: 1;
+}
